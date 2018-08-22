@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<title>Wizytówka</title>
+	<meta name="description" content="Wizytówka">
+	<meta name="keywords" content="Wizytówka">
+	<meta name="author" content="JK">
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<link rel="stylesheet" href="css1/fontello.css" type="text/css"/>
+</head>
+
+<body>
+	
+	<div class="top" onclick="scroll_to('.kafelki');">
+		<i class="icon-left-big"></i>
+	</div>
+	
+	<section class="kafelki">
+	
+		<div class="container-fluid">
+		
+			<header>
+				<h1>Imię Nazwisko</h1>
+			</header>
+			
+			<div class="row">
+			
+				<div class="col-md-12 col-lg-4">
+				
+					<div class="kafelek" onclick="scroll_to('.omnie');">
+						<div class="photo1"> 
+							<div class="overlay">
+								<i class="icon-user"></i>
+								<a>O mnie</a>
+							</div>	
+						</div>
+					</div>	
+					
+				</div>
+				
+				<div class="col-md-12 col-lg-4">
+					<div class="kafelek" onclick="scroll_to('.mojapraca');">
+						<div class="photo2"> 
+							<div class="overlay">
+								<i class="icon-briefcase"></i>
+								<a>Moja praca</a>
+							</div>
+						</div>
+					</div>			
+				</div>
+				
+				<div class="col-md-12 col-lg-4">
+					<div class="kafelek" onclick="scroll_to('.galeria');">
+						<div class="photo3">
+							<div class="overlay">
+								<i class="icon-picture"></i>
+								<a>Galeria</a>
+							</div>
+						</div>
+					</div>			
+				</div>
+				
+				<div class="col-md-12 col-lg-4 offset-lg-2">
+					<div class="kafelek" onclick="scroll_to('.oferta');">
+						<div class="photo4"> 
+							<div class="overlay">
+								<i class="icon-folder"></i>
+								<a>Oferta</a>
+							</div>
+						</div>
+					</div>			
+				</div>
+				
+				<div class="col-md-12 col-lg-4">
+					<div class="kafelek" onclick="scroll_to('.kontakt');">
+						<div class="photo5"> 
+							<div class="overlay">
+								<i class="icon-mail"></i>
+								<a>Kontakt</a>
+							</div>	
+						</div>
+					</div>			
+				</div>
+			</div>
+					
+			
+		</div>
+	
+	</section>
+	
+	<section class="reszta">
+	
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="omnie">
+						<h1>O mnie</h1>
+					</div>
+				</div>	
+				
+				<div class="col-12">
+					<div class="mojapraca">
+						<h1>Moja praca</h1>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<div class="galeria">
+						<h1>Galeria</h1>
+						
+					</div>
+				</div>
+
+				<div class="col-12">
+					<div class="oferta">
+						<h1>Oferta</h1>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<div class="kontakt">
+						<h1>Kontakt</h1>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="dane">	
+										<div class="dane1">
+											Jakub Kolewczyński
+											<hr/>
+										</div>
+										<div class="dane1">
+											Kossaka 54/53
+											<hr/>
+										</div>
+										<div class="dane1">
+											tel. 727-933-835
+											<hr/>
+										</div>
+										<div class="dane1">
+											jakub.kolewczynski@gmail.com
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2394.62449987331!2d17.97088491597882!3d53.116934299570794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470313ab5ad6ba85%3A0xd742e1fdfe3fc49a!2sGnie%C5%BAnie%C5%84ska+2%2C+85-001+Bydgoszcz!5e0!3m2!1sen!2spl!4v1534530731601" id="map" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>		
+	
+	</section>
+ 
+	
+	<script>
+			function scroll_to(selector)
+			{
+			$('html,body').animate({scrollTop: $(selector).offset().top-30}, 1000);
+			return false;
+			} 
+	</script>		
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	
+</body>

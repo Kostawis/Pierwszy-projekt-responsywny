@@ -1,0 +1,258 @@
+body::-webkit-scrollbar
+{
+	width: 13px;
+}
+body::-webkit-scrollbar-track
+{
+	background-image: url("foto/1.png");
+}
+body::-webkit-scrollbar-thumb
+{
+	background-color: #415D55;
+	border-radius: 30px;
+}
+body
+{
+	
+	background-image: url("foto/1.png");
+		
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 	
+	font-size: 20px;
+	color: #efefef;
+}
+
+a:link 
+{
+    color: #fff;
+	text-decoration: none;
+}
+
+a:visited 
+{
+    color: #fff;
+}
+
+a:hover 
+{
+    color: #fff;
+}
+
+a:active 
+{    
+	color: #fff;
+}
+.top
+{
+	height: 70px;
+	width: 70px;
+	background-color: rgba(46, 48, 50, 0.6);
+	position: fixed;
+	bottom: 40px;
+	right: 2%;
+	transform: rotate(90deg);
+	border-radius: 100%;
+	z-index: 100;
+}
+.top:hover
+{
+	background-color: rgba(46, 48, 50, 1);
+	cursor: pointer;
+	transform: scale(1.05) rotate(90deg) ;
+}
+h1
+{
+	font-size: 74px;
+	font-weight: bold;
+	color: #AEC3D5;
+	margin-top: 45px;	
+	margin-bottom: 20px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.container-fluid
+{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.kafelek
+{
+	background-image: url("foto/1.png");
+	border-radius: 100px;
+	opacity: 0.7; 
+	height: 280px;
+	margin-top: 50px;
+	text-align: center;
+}
+.kafelek:hover
+{
+	cursor: pointer;
+	opacity: 1;
+}
+@media (min-width: 991px) /* powyzej 991px */
+{
+	.kafelek a
+	{
+		display: none;
+		padding-top: 80px;
+		font-size: 70px;
+		font-weight: bold;
+	}
+	.kafelek:hover i
+	{
+		display: none;
+	}
+	.kafelek:hover a
+	{
+		display: block;
+	}
+	.kafelek:hover
+	{
+		transform: scale(1.02);
+	}
+}
+
+@media (max-width: 991px) /* ponizej 991px */
+{
+	.kafelek
+	{
+		height: 110px;
+		margin-top: 20px;
+		text-align: left;	
+	}
+	.kafelek a
+	{
+		visibility: visible;
+		font-size: 50px;
+		margin-left: 15px;
+		display: inline-block;
+	}
+	
+	.kafelek:hover
+	{
+		cursor: pointer;
+	}
+	.kafelek .photo5
+	{
+		margin-bottom: 30px;
+	}
+	
+}
+
+@media (max-width: 1451px) and (min-width: 991px) /* pomiedzy 1451px a 991px */
+{
+	
+		.kafelek .photo2 a
+		{
+			padding-top: 65px;
+			line-height: 90%;
+		}
+	
+} 
+.omnie
+{
+	height: 850px;
+	background-color: rgba(150,175,168, 0.5);
+	margin-top: 160px;
+	padding-top: 15px;
+}
+
+.mojapraca
+{
+	height: 850px;
+	background-color: rgba(150,175,168, 0.5);
+	border-top: dotted 5px #313937;
+}
+.galeria
+{
+	height: 850px;
+	background-color: rgba(150,175,168, 0.5);
+	border-top: dotted 5px #313937;
+}
+.oferta
+{
+	height: 850px;
+	background-color: rgba(150,175,168, 0.5);
+	border-top: dotted 5px #313937;
+}
+.kontakt
+{
+	height: 850px;
+	background-color: rgba(150,175,168, 0.5);
+	border-top: dotted 5px #313937;
+	margin-bottom: 30px;
+}
+@media (max-width: 1800px)
+{
+	.dane
+	{
+		font-size: 30px;
+	}
+}
+@media (max-width: 1400px)
+{
+	.dane
+	{
+		font-size: 25px;
+	}
+}
+@media (max-width: 1110px)
+{
+	.dane
+	{
+		font-size: 20px;
+	}
+}
+@media (max-width: 991px)
+{
+	.dane
+	{
+		font-size: 30px;
+		text-align: center;
+		line-height: 100%;
+	}
+	#map
+	{
+		width:100%;
+		height: 350px;
+		margin-top: 50px;
+	}
+}
+@media (min-width: 991px)
+{
+	.dane
+	{
+		text-align: center;
+		margin-top: 160px;
+	}
+	.dane1
+	{
+		height: 70px;
+		padding-top: 0px;
+	}
+	#map
+	{
+		height: 600px; 
+		border: 0;
+		width: 100%;
+	}
+}
+@media (min-width: 1800px)
+{
+	.dane
+	{
+		font-size: 40px;
+	}
+}
+
+
+.kontakt h1
+{
+	margin-bottom: 50px;
+}
+* {
+  box-sizing: border-box;
+}
+

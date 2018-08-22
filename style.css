@@ -123,6 +123,11 @@ h1
 		margin-top: 160px;
 		padding-top: 15px;
 	}
+	.container-fluid
+	{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
 }
 
 @media (max-width: 991px) /* ponizej 991px */
@@ -166,16 +171,21 @@ h1
 		margin-top: 50px;
 		padding-top: 1px;
 	}
+	.container-fluid
+	{
+		padding-left: 3%;
+		padding-right: 3%;
+	}
 }
 
 @media (max-width: 1451px) and (min-width: 991px) /* pomiedzy 1451px a 991px */
 {
 	
-		.kafelek .photo2 a
-		{
-			padding-top: 65px;
-			line-height: 90%;
-		}
+	.kafelek .photo2 a
+	{
+		padding-top: 65px;
+		line-height: 90%;
+	}
 	
 } 
 .omnie
@@ -204,7 +214,6 @@ h1
 }
 .kontakt
 {
-	height: 850px;
 	background-color: rgba(150,175,168, 0.5);
 	border-top: dotted 5px #313937;
 	margin-bottom: 30px;

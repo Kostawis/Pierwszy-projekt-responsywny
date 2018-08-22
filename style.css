@@ -4,7 +4,7 @@ body::-webkit-scrollbar
 }
 body::-webkit-scrollbar-track
 {
-	background-image: url("foto/1.png");
+	background-image: url("foto/obraz3.png");
 }
 body::-webkit-scrollbar-thumb
 {
@@ -13,9 +13,7 @@ body::-webkit-scrollbar-thumb
 }
 body
 {
-	
-	background-image: url("foto/1.png");
-		
+	background-image: url("foto/obraz3.png");
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 	
@@ -45,8 +43,6 @@ a:active
 }
 .top
 {
-	height: 70px;
-	width: 70px;
 	background-color: rgba(46, 48, 50, 0.6);
 	position: fixed;
 	bottom: 40px;
@@ -58,17 +54,13 @@ a:active
 .top:hover
 {
 	background-color: rgba(46, 48, 50, 1);
-	cursor: pointer;
-	transform: scale(1.05) rotate(90deg) ;
 }
 h1
 {
-	font-size: 74px;
 	font-weight: bold;
 	color: #AEC3D5;
 	margin-top: 45px;	
-	margin-bottom: 20px;
-	letter-spacing: 10px;
+	margin-bottom: 30px;
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -79,7 +71,7 @@ h1
 }
 .kafelek
 {
-	background-image: url("foto/1.png");
+	background-image: url("foto/obraz1.png");
 	border-radius: 100px;
 	opacity: 0.7; 
 	height: 280px;
@@ -93,6 +85,21 @@ h1
 }
 @media (min-width: 991px) /* powyzej 991px */
 {
+	.top
+	{
+		height: 70px;
+		width: 70px;
+	}
+	.top:hover
+	{
+		cursor: pointer;
+		transform: scale(1.05) rotate(90deg) ;
+	}
+	h1
+	{
+		font-size: 84px;
+		letter-spacing: 10px;
+	}
 	.kafelek a
 	{
 		display: none;
@@ -116,17 +123,29 @@ h1
 
 @media (max-width: 991px) /* ponizej 991px */
 {
+	.top
+	{
+		height: 30px;
+		width: 30px;
+	}
+	h1
+	{
+		font-size: 7vw;
+		letter-spacing: 4px;
+	}
+	.overlay
+	{
+		margin: auto;
+	}
 	.kafelek
 	{
-		height: 110px;
-		margin-top: 20px;
-		text-align: left;	
+		height: 50px;
+		margin-top: 10px;
 	}
 	.kafelek a
 	{
 		visibility: visible;
-		font-size: 50px;
-		margin-left: 15px;
+		font-size: 22px;
 		display: inline-block;
 	}
 	
@@ -209,7 +228,7 @@ h1
 {
 	.dane
 	{
-		font-size: 30px;
+		font-size: 4vw;
 		text-align: center;
 		line-height: 100%;
 	}

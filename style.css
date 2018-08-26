@@ -13,7 +13,7 @@ body::-webkit-scrollbar-thumb
 }
 body
 {
-	background: url("foto/obraz3.png");
+	background: url("foto/obraz3.jpg");
     background-attachment: fixed;
     background-position: center; 	
     background-repeat: no-repeat; 

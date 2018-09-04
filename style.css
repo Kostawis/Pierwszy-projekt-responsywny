@@ -261,15 +261,20 @@ h1
     font-weight: 700;
     letter-spacing: 1px;
 }
+.price .hide1, .price .hide2, .price .hide3
+{
+    display: none;
+}
 .price li 
 {
-	height: 60px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     width: 80%;
-	align-items: center;
-	justify-content: center;
-	display: flex;
+	text-align: center;
+    display: block;
     border-bottom: solid 1px grey;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 .price li:last-child
 {
@@ -363,8 +368,5 @@ h1
 }
 
 
-.ona3, .ona2, .ona1
-{
-    display: none;
-}
+
 

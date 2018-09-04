@@ -144,10 +144,10 @@
 										<ul class="price">
 											<li class="header" style="background-color: #4058FF;">Normalny</li>
 											<li class="grey">500PLN</li>
-                                            <div class="ona1"><li class="hide">Ilość godzin: 35H</li>
-											<li class="hide">Teoria: 15H</li>
-											<li class="hide">Praktyka: 20H</li>
-                                            <li class="hide">Materiały <i class="icon-ok"></i></li></div>
+                                            <li class="hide1">Liczba godzin: 35H</li>
+											<li class="hide1">Teoria: 15H</li>
+											<li class="hide1">Praktyka: 20H</li>
+                                            <li class="hide1">Materiały <i class="icon-ok"></i></li>
 											<li><button class="but1">Więcej</button></li>
 										</ul>
 
@@ -160,10 +160,10 @@
 										  <ul class="price">
 											<li class="header" style="background-color: rgba(64, 66, 64, 0.7);">Podstawowy</li>
 											<li class="grey">300PLN</li>
-                                            <div class="ona2"><li class="hide">Ilość godzin: 16H</li>
-											<li class="hide">Teoria: 8H</li>
-											<li class="hide">Praktyka: 8H</li>
-                                            <li class="hide">Materiały <i class="icon-x"></i></li></div>
+                                            <li class="hide2">Liczba godzin: 16H</li>
+											<li class="hide2">Teoria: 8H</li>
+											<li class="hide2">Praktyka: 8H</li>
+                                            <li class="hide2">Materiały <i class="icon-x"></i></li>
 											<li><button class="but2">Więcej</button></li>
 										  </ul>
 										  
@@ -176,10 +176,10 @@
 										  <ul class="price">
 											<li class="header" style="background-color: rgba(64, 66, 64, 0.7);">Rozszerzony</li>
 											<li class="grey">800PLN</li>
-											<div class="ona3"><li class="hide">Ilość godzin: 50H</li>
-											<li class="hide">Teoria: 20H</li>
-											<li class="hide">Praktyka: 30H</li>
-											<li class="hide">Materiały <i class="icon-ok"></i></li></div>
+											<li class="hide3">Liczba godzin: 50H</li>
+											<li class="hide3">Teoria: 20H</li>
+											<li class="hide3">Praktyka: 30H</li>
+											<li class="hide3">Materiały <i class="icon-ok"></i></li>
 											<li><button class="but3">Więcej</button></li>
 										  </ul>
 										  
@@ -230,21 +230,21 @@
     <script>
         $(document).ready(function(){
             $("button.but1").click(function(){
-                $("div.ona1").toggle(200);
+                $("li.hide1").toggle(200);
             });
         });
     </script>
     <script>
         $(document).ready(function(){
             $("button.but2").click(function(){
-                $("div.ona2").toggle(200);
+                $("li.hide2").toggle(200);
             });
         });
     </script>
     <script>
         $(document).ready(function(){
             $("button.but3").click(function(){
-                $("div.ona3").toggle(200);
+                $("li.hide3").toggle(200);
             });
         });
 	</script>

@@ -191,6 +191,7 @@ h1
 	padding-right: 6%;
 	text-align: justify;
 	font-size: 1.5rem;
+    min-height: 750px;
 }
 @media (max-width: 1201px)
 {

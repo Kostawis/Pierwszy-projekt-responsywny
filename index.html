@@ -15,6 +15,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css" type="text/css"/>
 	<link rel="stylesheet" href="css1/fontello.css" type="text/css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -103,25 +105,89 @@
 				<div class="col-12">
 					<div class="omnie">
 						<h1>O mnie</h1>
+						
+									
+									<img src="foto/profilowe.jpg" border="20px" hspace="30" align="right"/>
+									<span>
+										Ut id cursus lectus. Praesent dignissim tristique libero, ac fermentum orci euismod dapibus. Proin at varius nibh, et ornare urna. Phasellus ornare aliquet commodo. Phasellus posuere porta cursus. Aliquam condimentum arcu in dui porta gravida. Aenean sit amet condimentum leo. Mauris eget elit tellus. Maecenas lacinia interdum elit, at commodo lacus mollis eget. Cras venenatis hendrerit justo, id dictum tellus faucibus a. Morbi iaculis odio a tellus pharetra, ac accumsan risus congue. Fusce tincidunt odio vitae erat tempor, quis convallis dolor tempus. Sed in massa bibendum, interdum elit non, sagittis orci. 
+										Ut id cursus lectus. Praesent dignissim tristique libero, ac fermentum orci euismod dapibus. Proin at varius nibh, et ornare urna. Phasellus ornare aliquet commodo. Phasellus posuere porta cursus. Aliquam condimentum arcu in dui porta gravida. Aenean sit amet condimentum leo. Mauris eget elit tellus. Maecenas lacinia interdum elit, at commodo lacus mollis eget. Cras venenatis hendrerit justo, id dictum tellus faucibus a. Morbi iaculis odio a tellus pharetra, ac accumsan risus congue. Fusce tincidunt odio vitae erat tempor, quis convallis dolor tempus. Sed in massa bibendum, interdum elit non, sagittis orci.
+									</span>
+								
 					</div>
 				</div>	
 				
 				<div class="col-12">
 					<div class="mojapraca">
 						<h1>Moja praca</h1>
+						<span>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod felis ac augue varius, ut tristique enim rhoncus. Vivamus gravida lectus ut magna fermentum, mattis maximus arcu vehicula. Aliquam mattis tincidunt magna. Curabitur eu est id enim euismod gravida sed nec enim. Pellentesque ullamcorper mi non risus ornare sagittis. Morbi vel felis nisi. Integer commodo turpis id risus porttitor, vel dictum turpis cursus. Nulla facilisi.		
+						</span>
 					</div>
 				</div>
 
 				<div class="col-12">
 					<div class="galeria">
 						<h1>Galeria</h1>
-						
+						<img src="foto/1.jpg"/> 
 					</div>
 				</div>
 
 				<div class="col-12">
 					<div class="oferta">
 						<h1>Oferta</h1>
+						<div class="container">
+							<div class="row">
+
+								<div class="col-12">
+									<div class="kafelekoferta">
+
+										<ul class="price">
+											<li class="header" style="background-color: #4058FF;">Normalny</li>
+											<li class="grey">500PLN</li>
+                                            <div class="ona1"><li class="hide">Ilość godzin: 35H</li>
+											<li class="hide">Teoria: 15H</li>
+											<li class="hide">Praktyka: 20H</li>
+                                            <li class="hide">Materiały <i class="icon-ok"></i></li></div>
+											<li><button class="but1">Więcej</button></li>
+										</ul>
+
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="kafelekoferta">
+									
+										  <ul class="price">
+											<li class="header" style="background-color: rgba(64, 66, 64, 0.7);">Podstawowy</li>
+											<li class="grey">300PLN</li>
+                                            <div class="ona2"><li class="hide">Ilość godzin: 16H</li>
+											<li class="hide">Teoria: 8H</li>
+											<li class="hide">Praktyka: 8H</li>
+                                            <li class="hide">Materiały <i class="icon-x"></i></li></div>
+											<li><button class="but2">Więcej</button></li>
+										  </ul>
+										  
+									</div>
+								</div>
+								
+								<div class="col-md-6">
+									<div class="kafelekoferta">
+									
+										  <ul class="price">
+											<li class="header" style="background-color: rgba(64, 66, 64, 0.7);">Rozszerzony</li>
+											<li class="grey">800PLN</li>
+											<div class="ona3"><li class="hide">Ilość godzin: 50H</li>
+											<li class="hide">Teoria: 20H</li>
+											<li class="hide">Praktyka: 30H</li>
+											<li class="hide">Materiały <i class="icon-ok"></i></li></div>
+											<li><button class="but3">Więcej</button></li>
+										  </ul>
+										  
+									</div>
+								</div>
+								
+							</div>
+						</div>
 					</div>
 				</div>
 
@@ -160,8 +226,28 @@
 		</div>		
 	
 	</section>
- 
-	
+
+    <script>
+        $(document).ready(function(){
+            $("button.but1").click(function(){
+                $("div.ona1").toggle(200);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("button.but2").click(function(){
+                $("div.ona2").toggle(200);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("button.but3").click(function(){
+                $("div.ona3").toggle(200);
+            });
+        });
+	</script>
 	<script>
 			function scroll_to(selector)
 			{

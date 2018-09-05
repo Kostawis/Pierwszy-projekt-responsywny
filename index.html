@@ -128,7 +128,22 @@
 				<div class="col-12">
 					<div class="galeria">
 						<h1>Galeria</h1>
-						<img src="foto/1.jpg"/> 
+						<div class="zdjecia">
+                            <img class="mySlides" src="foto/1.jpg"  />
+                            <img class="mySlides" src="foto/2.jpg"  />
+                            <img class="mySlides" src="foto/3.jpg"  />
+                            <img class="mySlides" src="foto/4.jpg"  />
+                            <img class="mySlides" src="foto/5.jpg"  />
+                            <img class="mySlides" src="foto/6.jpg"  />
+                        </div>
+                        <div class="underphoto">
+                            <img class="demo" src="foto/1.jpg" onclick="currentDiv(1)">
+                            <img class="demo" src="foto/2.jpg" onclick="currentDiv(2)">
+                            <img class="demo" src="foto/3.jpg" onclick="currentDiv(3)">
+                            <img class="demo" src="foto/4.jpg" onclick="currentDiv(4)">
+                            <img class="demo" src="foto/5.jpg" onclick="currentDiv(5)">
+                            <img class="demo" src="foto/6.jpg" onclick="currentDiv(6)">
+                        </div>
 					</div>
 				</div>
 
@@ -254,9 +269,34 @@
 			$('html,body').animate({scrollTop: $(selector).offset().top-30}, 1000);
 			return false;
 			} 
-	</script>		
-	
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	</script>
+   <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery-3.3.1.min.js"></script>

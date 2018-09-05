@@ -217,15 +217,50 @@ h1
 	text-align: justify;
 	font-size: 1.5rem;
 }
+.underphoto::-webkit-scrollbar
+{
+    height: 1vw;
+}
+.underphoto::-webkit-scrollbar-thumb
+{
+    background-color: #0e3168;
+    border-radius: 30px;
+}
 .galeria
 {
 	background-color: rgba(150,175,168, 0.5);
 	border-top: dotted 5px #313937;
 }
-.galeria img 
+.zdjecia
 {
-	width: 100%;
-	height: auto;
+    width: auto;
+    height: 35vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.zdjecia img
+{
+    width: auto;
+    height: 35vw;
+    margin: auto;
+}
+.underphoto
+{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    overflow-x:scroll;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.underphoto img
+{
+    height: 9vw;
+    width: auto;
+    padding: 0.5vw;
 }
 .oferta
 {

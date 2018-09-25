@@ -219,7 +219,7 @@ h1
 }
 .underphoto::-webkit-scrollbar
 {
-    height: 1vw;
+    height: 0.8vw;
 }
 .underphoto::-webkit-scrollbar-thumb
 {
@@ -230,6 +230,7 @@ h1
 {
 	background-color: rgba(150,175,168, 0.5);
 	border-top: dotted 5px #313937;
+    padding-bottom: 25px;
 }
 .zdjecia
 {
@@ -246,13 +247,14 @@ h1
     width: auto;
     height: 35vw;
     margin: auto;
+    border-radius: 8px;
 }
 .underphoto
 {
     display: flex;
     flex-direction: row;
     justify-items: center;
-    overflow-x:scroll;
+    overflow-x: auto;
     margin-left: 7%;
     margin-right: 7%;
 }
@@ -261,6 +263,7 @@ h1
     height: 9vw;
     width: auto;
     padding: 0.5vw;
+    border-radius: 1vw;
 }
 .oferta
 {
